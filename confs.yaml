@@ -13,3 +13,15 @@
   mode: hybrid
   topics: 
     - Azure
+- name: betterCode() Rust
+  description: Die betterCode() Rust hilft dir, die ersten Hürden beim Einstieg in Rust zu nehmen und produktiv zu entwickeln. Nach dem Konferenztag kannst du deine eigene Desktop-Anwendung, Web-API oder WebAssembly-Anwendungen in Rust schreiben. Rust bietet von Haus aus Sicherheitskonzepte, die Schwachstellen vor allem beim Speichermanagement vermeiden. Besonderheiten wie das Ownership-Konzept erfordern ein Umdenken, aber der Einstieg ist weniger komplex als viele denken.
+  start: 2022-11-09
+  end: 2022-11-09
+  url: https://rust.bettercode.eu/
+  twitter: bettercodeconf
+  city: Berlin
+  country: 🇩🇪
+  mode: virtual
+  topics:
+    - Rust
+
