@@ -1,8 +1,10 @@
 # Awesome Tech Conferences
 
-*Awesome Tech Conferences* is a curated list of tech conferences. Feel free to submit new tech conferences by adding them to `./confs.yaml`.
+*Awesome Tech Conferences* is a curated list of tech conferences.
 
-Provide essential metadata about the conference in the following scheme:
+## Contributing
+
+Feel free to submit new tech conferences by adding them to `./confs.yaml`. For every new conference provide the following metadata:
 
 ```yaml
 name: Conference Name
@@ -22,6 +24,22 @@ description: Description about the conference
     - Azure
 ```
 
-`twitter` and `cfp` are optional values.
+### Schema notes
 
-for `mode` provide one of `hybrid`, `onsite`, or `virtual`
+- `twitter` and `cfp` are optional values.
+- `mode` should have one of the following values `hybrid`, `onsite`, or `virtual`
+- `description` is truncated after `285` characters
+
+### Contributors
+
+Although the public website does not reflect contributors yet, add yourself also to `./contributors.md` as shown below:
+
+```md
+- [GitHubUserName](your website, twitter profile or github profile)
+```
+
+For example:
+
+```md
+- [JohnDoe](https://john-does-tech-blog.sample)
+```
