@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body class="bg-slate-800 text-slate-300 font-sans flex flex-col p-10 min-h-screen">
+    <body class="bg-slate-800 text-slate-300 font-sans flex flex-col p-10 min-h-screen overflow-x-hidden">
         {{- partial "pr.html" .}}
         {{- partial "header.html" . -}}
         {{- block "main" . }}{{- end }}
