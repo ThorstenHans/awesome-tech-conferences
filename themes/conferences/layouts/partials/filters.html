@@ -1,7 +1,7 @@
 {{ $countries := newScratch }}
 {{ $topics := newScratch }}
 {{ $modes := newScratch }}
-{{ $all := (where .Site.Data.conferences "start" "ge" (now.Format "2006-01-02"))}}
+{{ $all := (where .Site.Data.confs "start" "ge" (now.Format "2006-01-02"))}}
 {{ range $all}}
 {{ $countries.Add .country 1}}
 {{ $modes.Add .mode 1}}
