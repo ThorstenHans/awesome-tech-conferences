@@ -43,3 +43,7 @@ For example:
 ```yaml
 - [JohnDoe](https://john-does-tech-blog.sample)
 ```
+
+### Conventional commit messages
+
+Conventional commit messages are enforced on this repository. PRs not using conventional commit messages will not be merged. Consult [https://www.conventionalcommits.org/en/v1.0.0/](https://www.conventionalcommits.org/en/v1.0.0/) to learn how to write conventional commit messages.
