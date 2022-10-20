@@ -32,14 +32,14 @@ description: Description about the conference
 
 ### Contributors
 
-Although the public website does not reflect contributors yet, add yourself also to `./contributors.md` as shown below:
+Although the public website does not reflect contributors yet, add yourself also to `./contributors.yaml` as shown below:
 
-```md
+```yaml
 - [GitHubUserName](your website, twitter profile or github profile)
 ```
 
 For example:
 
-```md
+```yaml
 - [JohnDoe](https://john-does-tech-blog.sample)
 ```
