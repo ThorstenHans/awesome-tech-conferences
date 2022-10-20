@@ -6,6 +6,7 @@ enableGitInfo: true
 params:
   title: Awesome Tech Conferences
   description: An open-source listing of technology conferences
+  truncateAt: 285
   repo:
     url: https://github.com/ThorstenHans/awesome-tech-conferences
   author:
