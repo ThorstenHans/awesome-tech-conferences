@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body class="bg-slate-800 text-slate-300 font-sans flex flex-col p-10 min-h-screen">
+        {{- partial "pr.html" .}}
+        {{- partial "header.html" . -}}
+        {{- block "main" . }}{{- end }}
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

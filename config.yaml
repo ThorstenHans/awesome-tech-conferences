@@ -1,0 +1,14 @@
+baseURL: https://tech-conferences.com
+languageCode: en-us
+theme: conferences
+enableGitInfo: true
+
+params:
+  title: Awesome Tech Conferences
+  description: An open-source listing of technology conferences
+  repo:
+    url: https://github.com/ThorstenHans/awesome-tech-conferences
+  author:
+    name: Thorsten Hans
+    url: https://www.thorsten-hans.com
+    location: Saarland

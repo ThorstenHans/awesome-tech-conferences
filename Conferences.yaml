@@ -1,0 +1,15 @@
+- name: Azure Developer Community Day 2022
+  description: Wir haben eine coole Location für ein starkes In-Person Event und gleichzeitig die Learnings aus den letzten beiden Jahren um das Event auch für Remote-Teilnehmer zu einem Erlebnis zu machen.
+  start: 2022-12-13
+  end: 2022-12-13
+  url: https://azuredev.org
+  twitter:
+  cfp:
+    url: https://sessionize.com/azure-developer-community-day-2022-hybr/
+    start: 2022-10-19
+    end: 2022-11-30
+  city: Munich
+  country: 🇩🇪
+  mode: hybrid
+  topics: 
+    - Azure

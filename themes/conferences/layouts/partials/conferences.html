@@ -1,0 +1,8 @@
+{{ $conferences := where .Site.Data.conferences "start" "ge" (now.Format "2006-01-02") }}
+<div class="flex-grow">
+    <div class="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 w-full gap-3">   
+    {{ range $conferences }}
+        {{ partial "conference.html" .}}
+    {{ end }}
+    </div>
+</div>
