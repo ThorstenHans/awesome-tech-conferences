@@ -11,7 +11,7 @@
   city: Munich
   country: 🇩🇪
   mode: hybrid
-  topics: 
+  topics:
     - Azure
 - name: betterCode() Rust
   description: Die betterCode() Rust hilft dir, die ersten Hürden beim Einstieg in Rust zu nehmen und produktiv zu entwickeln. Nach dem Konferenztag kannst du deine eigene Desktop-Anwendung, Web-API oder WebAssembly-Anwendungen in Rust schreiben. Rust bietet von Haus aus Sicherheitskonzepte, die Schwachstellen vor allem beim Speichermanagement vermeiden. Besonderheiten wie das Ownership-Konzept erfordern ein Umdenken, aber der Einstieg ist weniger komplex als viele denken.
@@ -24,4 +24,106 @@
   mode: virtual
   topics:
     - Rust
-
+- name: NDC London
+  description: A Software Developers Conference currently running in London, Oslo, Kongsberg, Porto, Copenhagen, Minnesota, Sydney & Melbourne
+  start: 2023-01-23
+  end: 2023-01-27
+  url: https://ndclondon.com/
+  twitter: NDC_Conferences
+  city: London
+  country: 🇬🇧
+  mode: onsite
+  topics:
+    - .NET
+    - Architecture
+    - Cloud
+    - AWS
+    - Azure
+    - Security
+    - Frontend
+- name: NDC Security
+  description: A Software Developers Conference currently running in London, Oslo, Kongsberg, Porto, Copenhagen, Minnesota, Sydney & Melbourne
+  start: 2023-01-16
+  end: 2023-01-19
+  url: https://ndc-security.com/
+  twitter: NDC_Conferences
+  city: Oslo
+  country: 🇳🇴
+  mode: onsite
+  topics:
+    - Security
+- name: Techorama Belgium
+  description: Techorama is a yearly international technology conference which takes place at Kinepolis Antwerp. We welcome about 1700 attendees, a healthy mix between developers, IT Professionals, Data Professionals and SharePoint professionals.
+  start: 2023-05-15
+  end: 2023-05-17
+  url: https://techorama.be/
+  twitter: TechoramaBE
+  city: Antwerp
+  country: 🇳🇴
+  mode: onsite
+  topics:
+    - .NET
+    - Frontend
+    - Architecture
+    - Cloud
+    - Azure
+    - Security
+- name: BASTA! 2023 Spring
+  description: For over 20 years BASTA! is the leading and independent conference for Microsoft Technologies and JavaScript. BASTA! enables developers and software-engineers, with competent offers about C#, .NET-Framework and web technologies, to keep up with recent developments. The eventprogram is filled with focuses on technologies like Angular, JavaScript with TypeScript and node.js. BASTA!’s outline gets completed by topics like Azure, Docker and DevOps. Last but not least, the unique high number and experience of the visiting experts lets you become part of future developments.
+  start: 2023-02-20
+  end: 2023-02-24
+  url: https://basta.net/frankfurt
+  twitter: BastaCon
+  city: Frankfurt
+  country: 🇩🇪
+  mode: hybrid
+  topics:
+    - .NET
+    - Frontend
+    - Architecture
+    - Cloud
+    - Cloud-Native
+    - Azure
+    - Security
+- name: W-JAX 2022
+  description: JAX, together with W-JAX, is one of the leading conference series for enterprise technologies, agile methods and software architecture in Europe. The conferences, along with Business Technology Days, provide IT professionals from leading companies of all sectors with the essential impulses for digital value creation and innovation. JAX covers a broad spectrum of current and future technologies from Java, Scala, android and web technologies to agile development models and the modern.
+  start: 2022-11-07
+  end: 2022-11-11
+  url: https://jax.de/munich
+  twitter: jaxcon
+  city: Munich
+  country: 🇩🇪
+  mode: hybrid
+  topics:
+    - Java
+    - Frontend
+    - Architecture
+    - Cloud
+    - AWS
+    - Security
+- name: Machine Learning Conference Singapore 2022
+  description: "Understand your dataMaking sense of your data is becoming key for every modern predictive business. At ML Conference you will develop a deep understanding of your data, as well as of the latest tools and technologies.Optimise your modelsLearn from seasoned experts which methods, libraries, services, models and algorithms to use and, crucially, hear their war stories of training cutting edge machine learning algorithms.Enhance your buisnessMake machine learning central to your business model: join ML Conference to gain key knowledge and skills for this new era of data driven business."
+  start: 2022-11-21
+  end: 2022-11-23
+  url: https://mlconference.ai/singapore/
+  twitter: mlconference
+  city: N/A
+  country: 🇸🇬
+  mode: virtual
+  topics:
+    - Machine Learning
+- name: DevOps Conference Singapore 2022
+  description: "Agile processes, microservices, continuous delivery, container and cloud technologies are essential to the current high performance IT transformation. The DevOps Conference offers you a glimpse at popular topics such as innovative infrastructure and modern lean business culture through hands-on workshops, sessions and keynotes. Join us as we enable shorter delivery cycles, faster changes of functionality and a higher software quality."
+  start: 2022-11-21
+  end: 2022-11-24
+  url: https://devopscon.io/singapore/
+  twitter: devops_con
+  city: N/A
+  country: 🇸🇬
+  mode: virtual
+  topics:
+    - DevOps
+    - SRE
+    - Kubernetes
+    - Cloud
+    - Cloud-Native
