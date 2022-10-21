@@ -4,7 +4,7 @@
 
 <div class="flex-grow">
     <div class="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 w-full gap-3">   
-    {{ range $conferences }}
+    {{ range sort $conferences ".start" "desc" }}
         {{ partial "conference.html" (dict "conference" . "truncateAt" $truncateAt) }}
     {{ end }}
     </div>
