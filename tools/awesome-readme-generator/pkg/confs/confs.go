@@ -3,6 +3,8 @@ package confs
 import (
 	"sort"
 	"time"
+
+	_ "gopkg.in/yaml.v2"
 )
 
 type ReadmeModel struct {
@@ -37,16 +39,16 @@ func NewReadmeModel(c ConferenceList) *ReadmeModel {
 }
 
 type Conference struct {
-	Name          string
-	Url           string
-	Country       string
-	City          string
-	Start         time.Time
-	End           time.Time
-	Twitter       string `yaml:"twitter,omitempty"`
-	Mode          string
-	Topics        []string
-	CallForPapers CallForPapers `yaml:"cfp,omitempty`
+	Name    string
+	Url     string
+	Country string
+	City    string
+	Start   time.Time
+	End     time.Time
+	Twitter string `yaml:"twitter,omitempty"`
+	Mode    string
+	Topics  []string
+	Cfp     CallForPapers `yaml:"cfp`
 }
 
 type CallForPapers struct {
@@ -56,7 +58,8 @@ type CallForPapers struct {
 }
 
 func (c Conference) HasCallForPapers() bool {
-	return c.CallForPapers.Start != time.Time{} &&
-		c.CallForPapers.End != time.Time{} &&
-		c.CallForPapers.Url != ""
+	return !time.Time.IsZero(c.Cfp.Start) &&
+		!time.Time.IsZero(c.Cfp.End) &&
+		c.Cfp.Url != ""
+
 }
