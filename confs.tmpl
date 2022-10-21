@@ -1,0 +1,10 @@
+{{ $all := .ConferencesByYear }}
+{{- range $i, $year := $all | keys }}
+### {{ $year }}
+{{ range values $all $year }}
+- {{ .Start | nice }} - {{ .End | nice }}: [{{ .Name }}]({{ .Url }}) {{- with .Twitter -}}[🐦](https://twitter.com/{{.}}){{- end -}} {{ if eq .Mode "virtual" }}🌎{{else}}in {{ .Country }} {{ .City}}{{end}}
+{{- if hasCfp . }}
+  - 🗣 [Call for Papers]({{.Url}}): {{ .Start | nice }} to {{ .End | nice }}
+{{- end -}}
+{{ end }}
+{{ end -}}

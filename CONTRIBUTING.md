@@ -1,8 +1,4 @@
-# Awesome Tech Conferences
-
-*Awesome Tech Conferences* is a curated list of tech conferences.
-
-## Contributing
+# Contributing
 
 Feel free to submit new tech conferences by adding them to `./confs.yaml`. For every new conference provide the following metadata:
 
@@ -24,13 +20,13 @@ description: Description about the conference
     - Azure
 ```
 
-### Schema notes
+## Schema notes
 
 - `twitter` and `cfp` are optional values.
 - `mode` should have one of the following values `hybrid`, `onsite`, or `virtual`
 - `description` is truncated after `285` characters
 
-### Contributors
+## Contributors
 
 Although the public website does not reflect contributors yet, add yourself also to `./contributors.yaml` as shown below:
 
@@ -44,6 +40,6 @@ For example:
 - [JohnDoe](https://john-does-tech-blog.sample)
 ```
 
-### Conventional commit messages
+## Conventional commit messages
 
 Conventional commit messages are enforced on this repository. PRs not using conventional commit messages will not be merged. Consult [https://www.conventionalcommits.org/en/v1.0.0/](https://www.conventionalcommits.org/en/v1.0.0/) to learn how to write conventional commit messages.
