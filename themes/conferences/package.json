@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./static/src/index.css -o ./static/css/output.css",
-    "watch": "npx tailwindcss -i ./static/src/index.css -o ./static/css/output.css --watch"
+    "build": "npx tailwindcss -i ./static/src/index.css -o ./static/css/output.css --minify",
+    "watch": "npx tailwindcss -i ./static/src/index.css -o ./static/css/output.css --minify --watch"
   },
   "author": "Thorsten Hans <thorsten.hans@gmail.com> (https://thorsten-hans.com/)",
   "license": "ISC",
