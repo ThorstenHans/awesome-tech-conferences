@@ -14,6 +14,7 @@ Awesome Tech Conferences is a curated list of tech conferences.
 ### 2022
 
 - 13-Dec-2022 - 13-Dec-2022: [Azure Developer Community Day 2022](https://azuredev.org)in 🇩🇪 Munich
+  - 🗣 [Call for Papers](https://sessionize.com/azure-developer-community-day-2022-hybr/): 19-Oct-2022 to 30-Nov-2022
 - 21-Nov-2022 - 23-Nov-2022: [Machine Learning Conference Singapore 2022](https://mlconference.ai/singapore/)[🐦](https://twitter.com/mlconference)🌎
 - 21-Nov-2022 - 24-Nov-2022: [DevOps Conference Singapore 2022](https://devopscon.io/singapore/)[🐦](https://twitter.com/devops_con)🌎
 - 09-Nov-2022 - 09-Nov-2022: [betterCode() Rust](https://rust.bettercode.eu/)[🐦](https://twitter.com/bettercodeconf)🌎
