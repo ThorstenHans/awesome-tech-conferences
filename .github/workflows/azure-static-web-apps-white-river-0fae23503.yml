@@ -11,7 +11,7 @@ on:
 
 jobs:
   generate_readme:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     name: Generate README.md
     steps:
