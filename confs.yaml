@@ -127,3 +127,14 @@
     - Kubernetes
     - Cloud
     - Cloud-Native
+- name: betterCode() .NET 7
+  description: Die von Heise und www.IT-Visions.de präsentierte Online-Konferenz bietet das Rüstzeug, sich einen grundlegenden Überblick zu .NET 7 zu verschaffen und abwägen zu können, ob sich der Wechsel schon jetzt lohnt oder ob man lieber auf das nächste LTS-Release wartet.
+  start: 2022-11-22
+  end: 2022-11-22
+  url: https://net.bettercode.eu/
+  twitter: bettercodeconf
+  city: N/A
+  country: 🇩🇪
+  mode: virtual
+  topics:
+    - .NET
