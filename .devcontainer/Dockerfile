@@ -5,7 +5,7 @@ ARG NODE_VERSION="none"
 RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-     && apt-get -y install --no-install-recommends hugo
+     && apt-get -y install --no-install-recommends hugo yamllint
 
 # [Optional] Uncomment the next lines to use go get to install anything else you need
 # USER vscode
