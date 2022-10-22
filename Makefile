@@ -4,5 +4,5 @@ build-confs:
 	@cat confs-*.yaml > ./data/confs.yaml
 
 	
-serve:
+serve: build-confs
 	@hugo server
