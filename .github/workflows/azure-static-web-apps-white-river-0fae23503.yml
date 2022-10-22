@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Lint Conference Data
     steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
       - uses: ibiqlik/action-yamllint@v3
         with:
           file_or_dir: confs-*.yaml
