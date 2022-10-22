@@ -18,6 +18,9 @@ mode: hybrid
 topics: 
   - Azure
 ```
+## DevContainer
+
+This repo also contains a DevContainer specification. The provided DevContainer contains all languages, tools, and fundamental VSCode Extensions required to build and run the "website" on your machine.
 
 ## Schema notes
 
