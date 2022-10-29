@@ -1,8 +1,16 @@
 {{ $countries := newScratch }}
 {{ $topics := newScratch }}
 {{ $modes := newScratch }}
+{{ $cfp := 0}}
 {{ $all := (where .Site.Data.confs "start" "ge" (now.Format "2006-01-02"))}}
 {{ range $all}}
+{{ with .cfp }}
+    {{ $s := time .start }}
+    {{ $e := time .end }}
+    {{ if and (ge now.Unix $s.Unix) (le now.Unix $e.Unix)}}
+        {{ $cfp = add $cfp 1 }}
+    {{ end}}
+{{ end }}
 {{ $countries.Add .country 1}}
 {{ $modes.Add .mode 1}}
 {{ range .topics }}
@@ -22,9 +30,11 @@
     }
     function filter(e) {
         // toggleFilter(e)
-        
+        const val = !e? '' : e.value;
         resetResults();
-        filterList(e.value);
+        if (val) {
+            filterList(val);
+        }
     }
 
     function resetResults() {
@@ -40,6 +50,7 @@
             const idx = JSON.parse(conference.dataset.topics);
             idx.push(conference.dataset.country)
             idx.push(conference.dataset.mode);
+            idx.push(conference.dataset.cfp)
             
             if (!idx.includes(selection)) {
                 conference.classList.add('hidden');
@@ -54,9 +65,15 @@
     <div>
         <input onclick="filter()" checked class="hidden peer" type="radio" name="filter" id="filter-none" value="">
         <label class="border border-sky-800 bg-gray-700 hover:bg-gray-700 peer-checked:border-fuchsia-400 peer-checked:text-white peer-checked:bg-fuchsia-800 px-[6px] py-[4px] cursor-pointer" for="filter-none">
-            all ({{ len $all }})
+            All ({{ len $all }})
         </label>
-        </div>
+    </div>
+    <div>
+        <input onclick="filter(this)" class="hidden peer" type="radio" name="filter" id="filter-cfp" value="open-cfp">
+        <label class="border border-sky-800 bg-gray-700 hover:bg-gray-700 peer-checked:border-fuchsia-400 peer-checked:text-white peer-checked:bg-fuchsia-800 px-[6px] py-[4px] cursor-pointer" for="filter-cfp">
+            Active Call for Papers ({{ $cfp }})
+        </label>
+    </div>
         
         {{ range $key, $value := $countries.Values }}
             <div>

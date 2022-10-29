@@ -1,9 +1,20 @@
 {{ $df := "January 2, 2006" }}
+{{ $cfp := ""}}
+{{ with .conference.cfp}}
+    {{ $s := time .start }}
+    {{ $e := time .end }}
+    {{ if and (ge now.Unix $s.Unix) (le now.Unix $e.Unix)}}
+        {{ $cfp = "open-cfp" }}
+    {{ end}}
+{{ end }}
 <div class="conference p-4 flex flex-col w-full text-center bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700"
 data-name="{{ .conference.name | safeHTML}}"
 data-topics="{{ .conference.topics | jsonify }}"
 data-country="{{ .conference.country | safeHTML }}" 
+data-cfp="{{ $cfp }}"
 data-mode="{{ .conference.mode | safeHTML }}">
+
+    
     <h2 class="mb-2 flex-none text-2xl text-gray-900 dark:text-white">{{ .conference.name | safeHTML }}</h2>
     <p class="mb-5 flex-none text-base text-gray-500 sm:text-lg dark:text-gray-400">
         {{ if eq .conference.mode "virtual" }}
@@ -25,6 +36,28 @@ data-mode="{{ .conference.mode | safeHTML }}">
     <p class="mb-5 flex-grow text-base text-gray-500 sm:text-lg dark:text-gray-400">
         {{ .conference.description | safeHTML | truncate .truncateAt }}
     </p>
+    
+    {{ with .conference.cfp }}
+    {{ $s := time .start }}
+    {{ $e := time .end }}
+        {{ if and (ge now.Unix $s.Unix) (le now.Unix $e.Unix)}}
+            <a href="{{.url}}" target="_blank" class="mb-3 text-slate-900 bg-sky-400 hover:bg-sky-600 hover:text-slate-100 rounded-md justify-center flex-none items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 px-4 py-2.5">
+                <div class="-mt-1 font-sans text-sm">
+                    Call for Paper is open till {{ time.Format $df .end }}
+                    <div class="font-bold text-xl">Apply now!</div>
+                </div>
+            </a> 
+        {{ end }}
+        {{ if and (le now.Unix $s.Unix) (le now.Unix $e.Unix)}}
+            <a target="_blank" class="mb-3 text-slate-900 bg-sky-400 hover:bg-sky-600 hover:text-slate-100 rounded-md justify-center flex-none items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 px-4 py-2.5">
+                <div class="-mt-1 font-sans text-sm">
+                    Call for Paper will open on
+                    <div class="font-bold text-xl">{{ time.Format $df .start }}</div>
+                </div>
+            </a> 
+        {{ end }}
+    {{ end }}
+    
     <div class="justify-center flex-none items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
         <a href="{{ .conference.url }}" target="_blank" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
             <div class="text-left">
@@ -39,5 +72,4 @@ data-mode="{{ .conference.mode | safeHTML }}">
         </a>
         {{ end }}
     </div>
-</div>
-<!-- --->
+</div> 
