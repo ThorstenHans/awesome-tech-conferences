@@ -1,4 +1,5 @@
 {{ $df := "January 2, 2006" }}
+
 {{ $s := time .start }}
 {{ $e := time .end }}
 {{ if and (ge now.Unix $s.Unix) (le now.Unix $e.Unix)}}
