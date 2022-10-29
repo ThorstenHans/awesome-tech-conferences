@@ -1,4 +1,7 @@
 <header class="flex flex-col text-center">
-    <h1 class="text-4xl lg:text-7xl font-bold text-slate-100 m-auto mb-4">{{ .Site.Params.title }}</h1>
-    <p class="text-2xl font-italic text-slate-200 m-auto mb-8">{{ .Site.Params.description }} </p>
+    <h1 class="text-4xl lg:text-7xl font-bold text-slate-100 m-auto mb-[15px]">{{ .Site.Params.title }}</h1>
+    <div class="text-2xl font-italic text-slate-200 m-auto mb-[30px]">
+        <div>{{ .Site.Params.description }}</div>
+        <div><a class="cursor-pointer" target="_blank" href="{{ .Site.Params.Repo.Url }}">Submit your tech conference <b class="text-sky-500 font-semibold">now</b></a></div>
+    </div>
 </header>
