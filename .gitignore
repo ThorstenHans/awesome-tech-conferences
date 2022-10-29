@@ -3,3 +3,5 @@ dist/
 
 # Awesome Readme Generator binary (if copied to root)
 awesome-readme
+
+.DS_Store
