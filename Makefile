@@ -1,4 +1,7 @@
-.PHONY serve, build-confs, lint:
+.PHONY serve, build-confs, build-contributors, lint:
+
+build-contributors:
+	@cp ./contributors.yaml ./data/
 
 build-confs: 
 	@cat confs-*.yaml > ./data/confs.yaml
@@ -11,5 +14,5 @@ lint:
 	@echo "Lint succeeded!"
 
 	
-serve: build-confs
+serve: build-confs build-contributors
 	@hugo server

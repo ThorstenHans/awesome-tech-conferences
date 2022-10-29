@@ -1,0 +1,11 @@
+<div class="flexitems-center align-center text-center ">
+    <h2 class="text-center text-2xl mt-8 mb-4">Contributors</h2>
+    <div class="flex  flex-row flex-wrap gap-3 mx-10 justify-center mb-8">
+    {{ range .Site.Data.contributors }}
+        <a href="https://github.com/{{ . }}" target="_blank" class="flex flex-col items-center justify-center space-y-2">
+            <img src="https://github.com/{{ . }}.png" class="rounded-full w-16 h-16" title="{{ . }}" alt="{{ . }}" />
+            
+        </a>
+    {{ end }}
+</div>
+</div>

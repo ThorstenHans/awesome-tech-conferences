@@ -38,6 +38,9 @@ jobs:
         run: make build && make copy-to-repo-root
       - name: Generate Conferences data file
         run: make build-confs
+      - name: Generate Contributors data file
+        run: |
+          make build-contributors
       - name: Generate README.md
         run: |
           ./awesome-readme --template ./confs.tmpl --data ./data/confs.yaml --readme-template ./README.tmpl --output ./README.md
@@ -47,7 +50,7 @@ jobs:
             git config --global user.name 'Thorsten Hans'
             git config --global user.email 'ThorstenHans@users.noreply.github.com'
             git add README.md
-            git commit -am "docs(*): Generate README for ${{ github.sha }}" -m "[skip actions]"
+            git commit -am "docs(*): Generate assets for ${{ github.sha }}" -m "[skip actions]"
             git push
           fi
 

@@ -54,16 +54,16 @@ make serve
 
 ## Contributors
 
-Although the public website does not reflect contributors yet, add yourself also to `./contributors.md` as shown below:
+Although the public website does not reflect contributors yet, add yourself also to `./contributors.yaml` as shown below:
 
 ```markdown
-- [GitHubUserName](your website, twitter profile or github profile)
+- GitHubUserName
 ```
 
 For example:
 
 ```markdown
-- [JohnDoe](https://john-does-tech-blog.sample)
+- ThorstenHans
 ```
 
 ## Conventional commit messages
