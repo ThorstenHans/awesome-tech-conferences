@@ -1,0 +1,19 @@
+{{ $df := "January 2, 2006" }}
+{{ $s := time .start }}
+{{ $e := time .end }}
+{{ if and (ge now.Unix $s.Unix) (le now.Unix $e.Unix)}}
+    <a href="{{.url}}" target="_blank" class="mb-3 text-slate-900 bg-sky-400 hover:bg-sky-600 hover:text-slate-100 rounded-md justify-center flex-none items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 px-4 py-2.5">
+        <div class="-mt-1 font-sans text-sm">
+            Call for Paper is open till {{ time.Format $df .end }}
+            <div class="font-bold text-xl">Apply now!</div>
+        </div>
+    </a> 
+{{ end }}
+{{ if and (le now.Unix $s.Unix) (le now.Unix $e.Unix)}}
+    <a target="_blank" class="mb-3 text-slate-900 bg-sky-400 hover:bg-sky-600 hover:text-slate-100 rounded-md justify-center flex-none items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 px-4 py-2.5">
+        <div class="-mt-1 font-sans text-sm">
+            Call for Paper will open on
+            <div class="font-bold text-xl">{{ time.Format $df .start }}</div>
+        </div>
+    </a> 
+{{ end }}

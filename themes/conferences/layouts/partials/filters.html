@@ -20,6 +20,13 @@
 
 <script type="text/javascript">
     window.filterValue = '';
+    function setAsFilter(e) {
+        const target = document.querySelector('input[name="filter"][value="' + e.innerText + '"]');
+        if (target) {
+            target.checked = true;
+            filter(target)
+        }
+    }
     // create a function that modifies a add a class to the element that is clicked
     function toggleFilter(e) {
         
