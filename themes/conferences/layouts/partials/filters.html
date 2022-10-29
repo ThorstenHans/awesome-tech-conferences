@@ -68,7 +68,6 @@
     
 </script>
 <div class="text-lg flex flex-row flex-wrap text-center gap-3 justify-items-center justify-center mb-10 mx-[10%]">
-    
     <div>
         <input onclick="filter()" checked class="hidden peer" type="radio" name="filter" id="filter-none" value="">
         <label class="border border-sky-800 bg-gray-700 hover:bg-gray-700 peer-checked:border-fuchsia-400 peer-checked:text-white peer-checked:bg-fuchsia-800 px-[6px] py-[4px] cursor-pointer" for="filter-none">
@@ -81,7 +80,14 @@
             Active Call for Papers ({{ $cfp }})
         </label>
     </div>
-        
+        {{ range $key, $value := $modes.Values}}
+            <div>
+                <input onclick="filter(this)" class="hidden peer" type="radio" name="filter" id="filter-{{ $key | safeHTML }}" value="{{ $key | safeHTML }}">
+                <label class="text-white rounded-lg bg-gray-700 hover:bg-gray-600 peer-checked:text-white peer-checked:bg-fuchsia-800 px-[6px] py-[4px] cursor-pointer" for="filter-{{ $key | safeHTML }}">
+                    {{ $key | safeHTML}} ({{ $value }})
+            </label>
+        </div>
+        {{ end }}
         {{ range $key, $value := $countries.Values }}
             <div>
                 <input onclick="filter(this)" class="hidden peer" type="radio" name="filter" id="filter-{{ $key | safeHTML }}" value="{{ $key | safeHTML }}">
@@ -97,13 +103,5 @@
                     {{ $key | safeHTML}} ({{ $value }})
                 </label>
             </div>
-        {{ end }}
-        {{ range $key, $value := $modes.Values}}
-            <div>
-                <input onclick="filter(this)" class="hidden peer" type="radio" name="filter" id="filter-{{ $key | safeHTML }}" value="{{ $key | safeHTML }}">
-                <label class="text-white rounded-lg bg-gray-700 hover:bg-gray-600 peer-checked:text-white peer-checked:bg-fuchsia-800 px-[6px] py-[4px] cursor-pointer" for="filter-{{ $key | safeHTML }}">
-                    {{ $key | safeHTML}} ({{ $value }})
-            </label>
-        </div>
         {{ end }}
 </div>
