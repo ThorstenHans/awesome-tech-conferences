@@ -71,6 +71,29 @@
   mode: virtual
   topics:
     - Rust
+- name: GitHub Universe
+  start: 2022-11-09
+  end: 2022-11-10
+  url: https://www.githubuniverse.com/
+  twitter: github
+  city: San Francisco
+  country: 🇺🇸
+  mode: hybrid
+  topics:
+    - Git
+    - GitHub
+- name: WeAreDevelopers Container Day
+  start: 2022-11-16
+  end: 2022-11-16
+  url: https://www.wearedevelopers.com/event/container-day-1611
+  twitter: WeAreDevs
+  city: N/A
+  country: N/A
+  mode: virtual
+  topics:
+    - Containers
+    - Docker
+    - Kubernetes
 - name: NDC London
   start: 2023-01-23
   end: 2023-01-27
@@ -128,3 +151,20 @@
     - Cloud-Native
     - Azure
     - Security
+- name: Cloudfest
+  start: 2023-03-21
+  end: 2023-02-23
+  url: https://www.cloudfest.com/
+  twitter: cloudfest
+  city: Rust
+  country: 🇩🇪
+  mode: onsite
+  cfp:
+    start: 2022-10-29
+    end: 2023-03-21
+    url: https://www.cloudfest.com/cloudfest-call-for-submissions
+  topics:
+    - Cloud
+    - Cloud-Native
+    - Architecture
+    
