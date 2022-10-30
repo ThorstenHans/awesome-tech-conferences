@@ -94,3 +94,16 @@
     - Containers
     - Docker
     - Kubernetes
+- name: VueConf Toronto
+  start: 2022-11-02
+  end: 2022-11-03
+  url: https://www.vuetoronto.com/
+  twitter: vuetoronto
+  city: Toronto
+  country: 🇨🇦
+  mode: hybrid
+  topics:
+    - Frontend
+    - Vue
+    - Javascript
+
