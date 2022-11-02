@@ -94,6 +94,19 @@
     - Containers
     - Docker
     - Kubernetes
+- name: VueConf Toronto
+  start: 2022-11-02
+  end: 2022-11-03
+  url: https://www.vuetoronto.com/
+  twitter: vuetoronto
+  city: Toronto
+  country: 🇨🇦
+  mode: hybrid
+  topics:
+    - Frontend
+    - Vue
+    - Javascript
+
 - name: NDC London
   start: 2023-01-23
   end: 2023-01-27
@@ -167,4 +180,26 @@
     - Cloud
     - Cloud-Native
     - Architecture
-    
+- name: JSNation
+  start: 2023-05-01
+  end: 2023-05-05
+  url: https://jsnation.com/
+  twitter: thejsnation
+  city: Amsterdam
+  country: 🇳🇱
+  mode: hybrid
+  topics:
+    - Frontend
+    - Javascript
+- name: Vue.js Live
+  start: 2023-05-05
+  end: 2023-05-08
+  url: https://vuejslive.com/
+  twitter: VueJSLive
+  city: London
+  country: 🇬🇧
+  mode: hybrid
+  topics:
+    - Frontend
+    - Vue
+    - Javascript
