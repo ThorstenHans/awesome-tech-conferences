@@ -106,6 +106,19 @@
     - Frontend
     - Vue
     - Javascript
+- name: DEVIntersection
+  start: 2022-12-06
+  end: 2022-12-08
+  url: https://www.devintersection.com/
+  twitter: devintersection
+  city: Las Vegas
+  country: 🇺🇸
+  mode: onsite
+  topics:
+    - .NET
+    - Cloud
+    - Azure
+    - Microsoft 365
 
 - name: NDC London
   start: 2023-01-23
@@ -188,6 +201,10 @@
   city: Amsterdam
   country: 🇳🇱
   mode: hybrid
+  cfp:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSfVSzKBuAkUUCVf6cSA-Tuuo6MDNI4S7CB06vrnkzTdAZYQFA/viewform
+    start: 2022-11-01
+    end: 2023-03-05
   topics:
     - Frontend
     - Javascript
@@ -199,7 +216,77 @@
   city: London
   country: 🇬🇧
   mode: hybrid
+  cfp:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSdMPHgvtFXU3dGSnYnvsPIuTdZ6DDya8_b4mYiAQWpgS-Y4qQ/viewform
+    start: 2022-11-01
+    end: 2023-02-05
   topics:
     - Frontend
     - Vue
     - Javascript
+- name: VisualStudio Live
+  start: 2023-03-19
+  end: 2023-03-24
+  url: https://vslive.com/events/las-vegas-2023/home.aspx
+  twitter: VSLive
+  city: Las Vegas
+  country: 🇺🇸
+  mode: onsite
+  topics:
+    - .NET
+    - Azure
+    - Cloud
+- name: VisualStudio Live
+  start: 2023-05-15
+  end: 2023-05-19
+  url: https://vslive.com/events/nashville-2023/home.aspx
+  twitter: VSLive
+  city: Nashville
+  country: 🇺🇸
+  mode: onsite
+  topics:
+    - .NET
+    - Azure
+    - Cloud
+- name: VisualStudio Live
+  start: 2023-07-17
+  end: 2023-07-21
+  url: https://vslive.com/events/microsofthq-2023/home.aspx
+  twitter: VSLive
+  city: Redmond
+  country: 🇺🇸
+  mode: onsite
+  topics:
+    - .NET
+    - Azure
+    - Cloud
+- name: DevSum
+  start: 2023-05-25
+  end: 2023-05-26
+  url: https://www.devsum.se/
+  twitter: devsum_swe
+  city: Stockholm
+  country: 🇸🇪
+  mode: onsite
+  cfp:
+    url: https://www.devsum.se/call-for-paper
+    start: 2022-11-02
+    end: 2022-12-11
+  topics:
+    - .NET
+    - Development
+    - Cloud
+- name: Developer Week 2023
+  start: 2023-06-26
+  end: 2023-06-30
+  url: https://www.developer-week.de/
+  twitter: cloudfest
+  city: Nuremberg
+  country: 🇩🇪
+  mode: onsite
+  topics:
+    - Web
+    - Mobile
+    - Java
+    - .NET
+    - Cloud
