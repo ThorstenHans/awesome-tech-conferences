@@ -6,6 +6,7 @@ Awesome Tech Conferences is a curated list of tech conferences.
 
 ### 2023
 
+- 12-Oct-2023 - 13-Oct-2023: [EuroRust](https://eurorust.eu/)[🐦](https://twitter.com/euro_rust) in 🇩🇪 TBA
 - 17-Jul-2023 - 21-Jul-2023: [VisualStudio Live](https://vslive.com/events/microsofthq-2023/home.aspx)[🐦](https://twitter.com/VSLive) in 🇺🇸 Redmond
 - 26-Jun-2023 - 30-Jun-2023: [Developer Week 2023](https://www.developer-week.de/)[🐦](https://twitter.com/cloudfest) in 🇩🇪 Nuremberg
 - 25-May-2023 - 26-May-2023: [DevSum](https://www.devsum.se/)[🐦](https://twitter.com/devsum_swe) in 🇸🇪 Stockholm
